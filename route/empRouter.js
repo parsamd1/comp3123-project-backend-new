@@ -30,7 +30,7 @@ route.route("/employees").get(async (req, res)=>{
     try {
         var emp = req.query
         await empModel.findByIdAndDelete(emp.eid)
-        res.status(201).json({message:`employee successfully deleted`})
+        res.status(204).json({})
     }catch (e) {
         res.status(500).json(e)
     }
