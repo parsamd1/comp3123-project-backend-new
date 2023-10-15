@@ -31,6 +31,7 @@ router.post("/login", async (req, res)=>{
         if(if_user_exists){
             res.status(200).json({
                 status:true,
+                username:username,
                 message:"User logged in successfully!"
             })
         }
