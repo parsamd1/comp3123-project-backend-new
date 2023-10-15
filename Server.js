@@ -27,7 +27,7 @@ app.use('/api/v1/emp', empRoute)
 
 
 // CONNECTING TO MONGODB SERVER BELOW!!!!!! ---------------------------------------------
-const uri = "mongodb+srv://rootadmin:Callofdutybo4@cluster0.sqtw7uq.mongodb.net/comp3123%5Fassignment1?retryWrites=true&w=majority"; // Replace with your MongoDB connection string
+const uri = "mongodb+srv://john123:john12345@cluster0.sqtw7uq.mongodb.net/comp3123%5Fassignment1?retryWrites=true&w=majority"; // Replace with your MongoDB connection string
 mongoose.connect(uri,
     {
         useNewUrlParser: true,
