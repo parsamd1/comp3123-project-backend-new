@@ -15,6 +15,13 @@ var SERVER_PORT=8089
 
 var app=express()
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Replace '*' with your frontend domain if known
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    next();
+  });
+
 // adjust the header content-type to application/json
 app.use(express.json())
 
